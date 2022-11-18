@@ -1,10 +1,10 @@
 import * as functions from "firebase-functions"
 import { region } from "./config"
-import { verifyBearerToken } from "./verification"
+import { verifyGChatBearerToken } from "./verify-gchat-bearer-token"
 import { chat_v1 } from "googleapis/build/src/apis/chat/v1"
 
 export const googleChatBot = functions.region(region).https.onRequest(async (req, res): Promise<void> => {
-    const tokenVerified = await verifyBearerToken(req)
+    const tokenVerified = await verifyGChatBearerToken(req)
     if (!tokenVerified) {
         res.sendStatus(401)
         return
