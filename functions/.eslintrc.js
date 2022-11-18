@@ -6,8 +6,7 @@ module.exports = {
 	},
 	extends: [
 		"eslint:recommended",
-		"plugin:import/errors",
-		"plugin:import/warnings",
+		"plugin:import/recommended",
 		"plugin:import/typescript",
 		"plugin:@typescript-eslint/recommended",
 	],
@@ -19,7 +18,16 @@ module.exports = {
 		"/lib/**/*", // Ignore built files.
 	],
 	plugins: [
-		"@typescript-eslint",
 		"import",
+		"@typescript-eslint",
 	],
+	settings: {
+		"import/parsers": {
+			"@typescript-eslint/parser": [".ts"],
+		},
+		"import/resolver": {
+			typescript: true,
+			node: true,
+		},
+	},
 };
