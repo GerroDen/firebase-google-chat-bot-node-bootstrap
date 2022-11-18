@@ -6,12 +6,9 @@ Bootstrap code for a Google Chat Bot with an endpoint implementation in Firebase
 
 1. Create a Firebase project and edit `.firebaserc` to change the default project to your Firebase project.
 1. Go to your Google Project and enable the [Google Chat API](https://console.cloud.google.com/marketplace/product/google/chat.googleapis.com).
-1. Edit `src/config.ts` and update it to your needs: Insert the `chatbotProjectId` of your Google Project.
-1. Deploy you project for the first time and copy the endpoint URL of the Firebase function.
+1. Deploy you project for the first time and copy the endpoint URL of the Firebase function and insert the project ID when prompted.
 1. Go back to your Google Project and manage the [Google Chat API](https://console.cloud.google.com/marketplace/product/google/chat.googleapis.com).
-1. Go to "Configure" and insert name, avatar (as dummy you can use https://goo.gl/yKKjbw), and description. Choose if it should repond to direct messages or
-   room mentions. Choose the "bot url" with the Firebase function's endpoint url that you just deployed. And at last restrict the access to certain users or the
-   whole organisation.
+1. Go to "Configure" and insert name, avatar (as dummy you can use https://goo.gl/yKKjbw), and description. Choose if it should repond to direct messages or room mentions. Choose the "bot url" with the Firebase function's endpoint url that you just deployed. And at last restrict the access to certain users or the whole organisation.
 
 Congratulations! You have a Chat Bot! In Google Chat search for your chat bot's name and test it out.
 
