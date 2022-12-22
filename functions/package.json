@@ -17,7 +17,7 @@
 		"firebase-admin": "^11.3.0",
 		"firebase-functions": "^4.1.0",
 		"googleapis": "^109.0.1",
-		"jsonwebtoken": "^8.5.1",
+		"jsonwebtoken": "^9.0.0",
 		"jwks-rsa": "^3.0.0"
 	},
 	"devDependencies": {
